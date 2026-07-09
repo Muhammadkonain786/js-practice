@@ -40,4 +40,4 @@
 // a = 23; var ma reassigned kar sakte hai or ma bhi reassigned kar sakte hai
 
 // var a = 90; var ma reinilialize kar sakte hai
-// let a = 20 ; let me reinilialize nahi kar sakte
+// let a = 20 ; let me redeclare nahi kar sakte
