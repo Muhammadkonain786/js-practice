@@ -1,4 +1,4 @@
-// Dynamic tryping --> js ma static typing nahi hai and yaha pr hai dynamic typring jis ka matlab hai ap data ko change kr sakte ho kionka yaha pr dynamic data types hai
+// Dynamic typing --> js ma static typing nahi hai and yaha pr hai dynamic typring jis ka matlab hai ap data ko change kr sakte ho kionka yaha pr dynamic data types hai
 
 
 // typeof quirks (eg typeof null ==='object')

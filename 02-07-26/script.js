@@ -1,42 +1,59 @@
-// Termporal dead zone
+// 1. var (Sab kuch khula chhoot hai)
+// ===================
 
-// utna area jitna ma js ko pata hai ke variabke exist krta hai pr wo apko valuse nahi de sakta
- 
-// line number 1 se le kr line number  12 tak variable "a" ka TDZ hai
+// var a;          // ✅ Declaration
+// a = 10;         // ✅ Initialization
+// a = 20;         // ✅ Re-assignment (Allowed)
+// var a = 30;     // ✅ Re-declaration (Allowed - koi error nahi aayega)
 
-// let or const ma hota hai but var ma nahi hota
+// 2. let (Ahtiyaat ke saath)
+// ===================
+// let b;          // ✅ Declaration
+// b = 10;         // ✅ Initialization
+// b = 20;         // ✅ Re-assignment (Allowed)
 
+// // let b = 30;  // ❌ Re-declaration (Error: 'b' has already been declared)
 
+// 3. const (Ziddi / Fixed)
+// ==================
+// const c;     // ❌ Error: Missing initializer (Banaate waqt value na di to error)
 
+// const c = 100;  // ✅ Declaration + Initialization (Ek saath zaroori hai)
 
-// let a = 12;
-
-// =============================================================
-
-// Hoisting impact per type
-
-// hoisting --> ek variable ko jab js ma banate hai to wo variable do hiso ma toot jata hai and uska declare part uper chale jata hai  and uska initialization part niche reh jata hai
-
-// Jab aap var use karte hain, to JS sirf variable ka naam upar le jata hai, uski value (assignment) ko nahi. Is liye line se pehle use karne par undefined milta hai, error nahi aata.
-
-// Variable ko pehle print kiya
-// console.log(naam); // Output: undefined (Error nahi aayega!)
-
-// var naam = "Ali"; 
-
-// console.log(naam); // Output: Ali
-
-// JS engine isse piche kuch is tarah dekhta hai:
-
-// var naam;          // Declaration upar chali gayi (hoist ho gayi)
-// console.log(naam); // Isliye yahan undefined aaya
-// naam = "Ali";      // Value apni jagah par hi rahi
-
-// let aur const bhi hoist hote hain, lekin JS unhein access karne nahi deta jab tak code unki line par na pohonch jaye. Is zone ko Temporal Dead Zone (TDZ) kehte hain. Agar aap pehle access karenge to ReferenceError aayega.
-
-// console.log(umar); // Error: Cannot access 'umar' before initialization
-
-// let umar = 25;
+// c = 200;     // ❌ Re-assignment (Error: Assignment to constant variable)
+// const c = 300; // ❌ Re-declaration (Error: 'c' has already been declared)
 
 
 
+// Hosting
+
+// ================
+
+// var ke saath Hoisting:
+// var jab top par hoist hota hai, to JavaScript usko shuru mein hi undefined value de deta hai.
+
+// console.log(a); // Output: undefined (Error nahi aayega!)
+// var a = 10;
+
+// JavaScript is code ko andar se aise dekhta hai:
+// var a;           <- Hoist ho kar top par chala gaya (Value default: undefined)
+// console.log(a);  <- Print hua undefined
+// a = 10;          <- Value baad mein assign hui
+
+
+// 2. TDZ - Temporal Dead Zone (Khatre Ka Ilaka)
+// =======================
+// let aur const bhi hoist hote hain, lekin JavaScript unhein pehle se undefined ki value nahi deta.
+
+// Scope ke shuru hone se le kar, jab tak code mein let ya const ki line execute nahi ho jati, us beech ke time period ko Temporal Dead Zone (TDZ) kehte hain. Is zone ke dauran agar aapne variable ko access karne ki koshish ki, to JavaScript ReferenceError de dega.
+
+// { // <-- Scope Shuru hua (TDZ Start)
+  
+//   // console.log(x); // ❌ ReferenceError: Cannot access 'x' before initialization
+//   // console.log(y); // ❌ ReferenceError
+
+//   let x = 20; // <-- TDZ End (Yahan x initialize ho gaya)
+//   const y = 30;
+
+//   console.log(x); // ✅ 20 (Ab TDZ khatam ho chuka hai)
+// }
