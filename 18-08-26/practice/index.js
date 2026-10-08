@@ -144,9 +144,70 @@
 
 // 1 se 50 tak sirf odd numbers ka sum calculate karo.
 
-let sum = 0
-for(let i=1 ; i<=50; i++){
-if(i%2===1){
-    sum=sum+i
-}
-}
+// let sum = 0
+// for(let i=1 ; i<=50; i++){
+// if(i%2===1){
+//     sum=sum+i
+// }
+// }
+
+// 1 se 100 tak count karo ke 3 ke kitne multiples hain
+
+// let count = 0;
+// for (let i = 1; i<=100 ; i++){
+//     if(i%3 === 0){
+//         count=count +1
+//     }
+//     console.log(count)
+// }
+
+// Find the Largest Number
+
+// let numbers = [12, 45, 7, 89, 23, 56];
+
+// let largest = numbers[0];
+
+// for (let i = 0; i < numbers.length; i++) {
+
+//     if (numbers[i] > largest) {
+//         largest = numbers[i];
+//     }
+
+// }
+
+// console.log(largest);
+
+
+// Reverse an Array
+
+// let fruits = ["Apple", "Banana", "Mango", "Orange"];
+ 
+// for(let i =3 ; i>=0; i--){
+
+//     console.log(fruits[i])
+
+// }
+
+    // let numbers = [-2, 5, -8, 10, 3, -1, 7];
+    // var count = 0;
+
+    // for(let i = 0; i < numbers.length; i++){
+    //     if(numbers[i]>0){
+    //         count++
+    //     }
+    // }
+    // console.log(count)
+
+
+
+
+    // for (let i = 1; i <= 5; i++) {
+
+    // let stars = "";
+
+    // for (let j = 1; j <= i; j++) {
+    //     stars = stars + "*";
+    // }
+
+    // console.log(stars);
+// }
