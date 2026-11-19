@@ -107,9 +107,9 @@
 
 // asa function jo bahar ki value ko na badle wo ha pure function
 
-// asa function jo bahark i value ko badal de wo ha impure function
+// asa function jo bahark ki value ko badal de wo ha impure function
 
-let a = 12;
+// let a = 12;
 
 // function abc (){
 //   console.log(hyhyhy);            this is pure function

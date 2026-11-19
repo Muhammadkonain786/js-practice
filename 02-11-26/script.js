@@ -23,7 +23,7 @@
 
 // reverse : Array ki value reverse kr dega means nicha ki value upper kr dega or upper ki value nicha kr dega
 
-// sort : accending and deccending ma kam ata ha isma ek function use hota ha a-b ka matlab ha accending or b-a ka matlab ha deccending eg:
+// sort : accending and deccending ma kam ata ha isma ek function use hota ha a-b ka matlab ha accending (chota se bare ki taraf)or b-a ka matlab ha deccending(bare se shote ki taraf) eg:
 // Array.sort(function(a,b){
 //     return a-b
 // })
@@ -105,7 +105,7 @@
 // JavaScript mein reduce() array ke tamam elements ko combine karke ek single value mein convert karta hai.
 
 // Iska mostly use array ka sum, total, average ya koi combined result calculate karne ke liye hota hai.
-// Example: Array ka Total Nikalna
+// Example: Array ka Total Nikalna      
 
 // let numbers = [10, 20, 30, 40];
 
@@ -143,11 +143,7 @@
 
 // JavaScript mein some() check karta hai ke array mein kam az kam ek element hamari condition ko true karta hai ya nahi.
 
-// Ye hamesha true ya false return karta hai.
-
-// JavaScript mein some() check karta hai ke array mein kam az kam ek element hamari condition ko true karta hai ya nahi.
-
-// Ye hamesha true ya false return karta hai.
+// Ye hamesha true ya false return karta hai.F
 
 // Example:
 
