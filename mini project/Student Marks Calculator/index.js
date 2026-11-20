@@ -366,35 +366,35 @@
       
 // }
 
- let students = ["Konain", "Ali", "Saif", "Ahmed"];
-let marks = [255, 210, 180, 135];
-let totalStudent = students.length
-console.log(totalStudent);
+//  let students = ["Konain", "Ali", "Saif", "Ahmed"];
+// let marks = [255, 210, 180, 135];
+// let totalStudent = students.length
+// console.log(totalStudent);
 
 
-function showAllResults (students,marks){
+// function showAllResults (students,marks){
 
-for(let i = 0 ; i<students.length; i++){
-    console.log("Student:" + students[i]);
-    console.log("Marks:"+marks[i]);
+// for(let i = 0 ; i<students.length; i++){
+//     console.log("Student:" + students[i]);
+//     console.log("Marks:"+marks[i]);
 
-    let percentage = marks[i]/300*100
-    console.log("Percentage:"+percentage);
+//     let percentage = marks[i]/300*100
+//     console.log("Percentage:"+percentage);
 
-    let grade ;
-    if (percentage>=80){
-grade="A+";
-}else if (percentage>=70) {
-    grade = "A";
-}else if (percentage>=60) {
-    grade= "B";
-}else if (percentage >= 50 ) {
-    grade="C"
-} else {
-    grade="Fail"
-}
- console.log("Grade:" + grade);
+//     let grade ;
+//     if (percentage>=80){
+// grade="A+";
+// }else if (percentage>=70) {
+//     grade = "A";
+// }else if (percentage>=60) {
+//     grade= "B";
+// }else if (percentage >= 50 ) {
+//     grade="C"
+// } else {
+//     grade="Fail"
+// }
+//  console.log("Grade:" + grade);
       
-}
-}
-showAllResults(students,marks);
+// }
+// }
+// showAllResults(students,marks);
